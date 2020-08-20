@@ -40,7 +40,8 @@ app.use("/movies", movieRoutes);
 app.use("/movies/:id/comments", commentRoutes);
 app.use("/", indexRoutes);
 
-mongoose.connect("mongodb://localhost:27017/movie_app", {
+//mongodb://localhost:27017/movie_app
+mongoose.connect(process.env.DATABASEURL, {
 	useUnifiedTopology: true,
 	useNewUrlParser: true
 })
