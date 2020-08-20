@@ -51,7 +51,8 @@ mongoose.connect("mongodb://localhost:27017/movie_app", {
 		console.log(error.message);
 	})
 
-app.listen(3000, ()=> {
+var port = process.env.PORT || 3000;
+app.listen(port, ()=> {
 	console.log("THE SERVER HAS STARTED");
 })
 
