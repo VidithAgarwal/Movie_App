@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+<div id = "form3" class = "ui main text container segment">
+	<div class = "ui huge header centered">
+		Login
+	</div>
+	<form class = "ui form" action = "/login" method = "POST">
+		<div id = "form4" class = "ui container text">
+			<div class = "field">
+				<div class = "ui left icon input">
+					<i class="user icon"></i>
+					<input type = "text" placeholder = "Username" name = "username">
+				</div>
+			</div>
+			<div class = "field">
+				<div class = "ui left icon input">
+					<i class="lock icon"></i>
+					<input type = "password" placeholder = "Password" name = "password">
+				</div>
+			</div>
+			<button class = "fluid ui button large primary">
+				Login
+			</button>
+			<div class = "extra1">
+				Don't have an account?<span class = "sp1" ><a href = "/register">Sign up here!</a></span>
+			</div>
+		</div>
+	</form>
+</div>
+
+<%- include("partials/footer.ejs") %>

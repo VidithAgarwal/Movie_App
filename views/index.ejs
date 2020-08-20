@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+<div class = "ui main container">
+	<div class = "ui huge header">
+		Latest Movies
+	</div>
+	<div class="ui link four column grid cards">
+		<% movies.forEach((movie) => { %>
+				<div class="card">
+					<div class="image">
+						 <img id = "pict" src = "<%= movie.poster %>">
+					</div>
+					<div class="content">
+					  <div class="header"><%= movie.title %></div>
+						 <div class="meta">
+						<a><%= movie.genre %></a>
+						 </div>
+					  <div class="description">
+						<%= movie.desc.substring(0,47) %>...
+					  </div>
+					</div>
+					<div class="extra content">
+						<span>
+							Dur: <%= movie.duration %> mins
+						</span>
+					</div>
+					<a href = "/movies/<%= movie._id %>" class="ui small basic red button">Read More</a>
+				</div>
+		<% }) %>
+	</div>
+</div>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+	<form class = "ui form" action = "/movies/<%= movie._id %>/comments" method = "POST">
+		<div id = "com" class = "text container main ui">
+			<div class = "huge header ui centered">
+				Add a comment
+			</div>
+			<div class = "field">
+				<lable><strong>Comment:</strong></lable>
+				<textarea rows = "2" name = "comment[text]"></textarea>
+			</div>
+			<button class = "ui button inverted large blue">
+				Submit
+			</button>
+		</div>
+	</form>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+<div class = "ui main text container">
+	<div class = "ui top attached">
+		<div class = "item">
+			<div class = "image">
+				<img class = "ui circular centered image"src = "<%= movie.poster %>">
+			</div>
+		</div>
+	</div>
+	<div id = "head" class = "ui huge centered header">
+		<%= movie.title %>
+	</div>
+	<div id = "genre" class="desc">
+      	<a><%= movie.genre %></a>
+    </div>
+	<h5 class="ui horizontal divider header">
+  		<i class="tag icon"></i>
+  			Description
+	</h5>
+	<div class = "desc content">
+		<%= movie.desc %>
+	</div>
+	<form class = "center" action = "/movies/<%= movie._id %>?_method=DELETE" method = "POST">
+		<button class = "ui button inverted red">Delete</button>
+	</form>
+</div>
+<div class="ui raised very padded text space container segment">
+	<div class = "ui comments">
+		<h2 class="ui header dividing">Comments</h2>
+		<% movie.comments.forEach((comment)=> { %>
+			<div class = "comment">
+				<div id = "space1" class = "content">
+					<a class = "author"><strong><%= comment.author.username %>: </strong></a>
+					<div class="metadata">
+        				<span class="date">Today at 5:42PM</span>
+      				</div>
+					<div class="text">
+        				<%= comment.text %>
+      				</div>
+				</div>
+			</div>
+		<% }) %>
+	</div>
+	<a class = "button ui red basic large center floated" href = "/movies/<%= movie._id %>/comments/new">Leave a review</a>
+</div>
+<%- include("partials/footer.ejs") %>

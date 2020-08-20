@@ -1,0 +1,113 @@
+i.icon {
+	font-size: 2.0em;
+}
+
+body {
+	margin-bottom: 40.0em;
+}
+
+.container.main {
+	margin-top: 7.0em;
+}
+
+.desc {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#head {
+	margin-bottom: 0px;
+}
+
+#genre {
+	color: grey;
+	margin-bottom: 5px;
+}
+
+.divider.header {
+	margin-top: 0px;
+}
+
+.center {
+	text-align: center;
+}
+
+#form1 {
+	background-color: #f7f7f7;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#form2 {
+	background-color: #f7f7f7;
+	width: 25%;
+}
+
+.ui.icon.input>i.icon {
+	font-size: 15px;
+	background-color: #dbd7d7;
+	width: 2.5em;
+	opacity: 0.9;
+}
+
+
+.user1{
+	width: 100%;
+	outline: none;
+	border: 0px solid;
+	background-color: #f7f7f7;
+	font-size: 18px;
+	padding: 13px 13px 13px 13px;
+	box-sizing: border-box;
+	color: #2980e9;
+}
+
+.ui.huge.header{
+	margin-top: 10px;
+}
+
+#form3 {
+	background-color: #f7f7f7;
+	width: 25%;
+}
+
+#form4 {
+	background-color: #f7f7f7;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.extra1 {
+	opacity: 0.5;
+	margin-top: 10px;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+.sp1 {
+	padding-left: 5px;
+}
+
+#com {
+	width: 35%;
+}
+
+.ui.space {
+	margin-top: 3.0em;
+}
+
+
+#space1 {
+	margin-top: 1em;
+}
+
+
+.cont {
+	margin: 10px;
+}
+
+.ui.button.red.basic.large {
+	margin-top: .5em;
+	margin-left: auto;
+}
+

@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+	
+	<form class = "ui form" action = "/movies" method = "POST">
+		<div class = "ui main text container">
+			<div class="ui huge header">Add A New Movie</div>
+			<div class = "required field">
+				<lable><strong>Movie Title:</strong></lable>
+				<input type = "text" name = "movie[title]" placeholder = "Title" required = "true">
+			</div>
+			<div class = "field">
+				<lable><strong>Poster:</strong></lable>
+				<input type = "text" name = "movie[poster]" placeholder = "img url">
+			</div>
+			<div class = "two fields">
+				<div class = "field">
+					<lable><strong>Genre:</strong></lable>
+					<input type = "text" name = "movie[genre]" placeholder = "Genre">
+				</div>
+				<div class = "field">
+					<lable><strong>Duration</strong> (in mins)</lable>
+					<input type = "text" name = "movie[duration]" placeholder = "Duration">
+				</div>
+			</div>
+			<div class = "field">
+				<lable><strong>Description:</strong></lable>
+				<textarea rows = "2" name = "movie[desc]"></textarea>
+			</div>
+			
+			<button class = "ui button inverted primary">Submit</button>
+		</div>
+	</form>
+
+<%- include("partials/footer.ejs") %>

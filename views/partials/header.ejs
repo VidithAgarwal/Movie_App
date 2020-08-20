@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movie App</title>
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+		<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "/stylesheets/app.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	</head>
+	<body>
+		<div class = "ui inverted segment">
+			<div class="ui inverted tabular menu">
+				<div class="header item">
+					<i class="film icon"></i>
+					<a href = "/">Movie App</a>
+				</div>
+				<a class="item" href = "/">
+					Home
+				</a>
+				<a class="item" href = "/movies/new">
+					Add New Movie
+				</a>
+				<div class="right menu">
+					<% if(!currentUser){ %>
+							<a href = "/register" class="item">Sign Up</a>
+							<a href = "/login" class="item">Login</a>
+					<% }else { %>
+							<a href = "#" class = "ui item">Signed in as <%= currentUser.username %></a>
+							<a href = "/logout" class="item">Logout</a>
+					<% } %>
+				</div>
+			</div>
+		</div>
+		
+  			
+		
+	
